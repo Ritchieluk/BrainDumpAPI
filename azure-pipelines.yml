@@ -31,5 +31,6 @@ steps:
   displayName: 'Install dependencies'
 
 - script: |
-    flask run
-  displayName: 'run app'
+    python -m pip install pytest
+    pytest
+  displayName: 'test'
